@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    }
+    
+body {
+    background-color: #212F3D;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+
+
+.header{
+    
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-icono{
+    display: none;
+}
+.logo{
+    color: #687cEF;
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+
+}
+
+.logo-pag {
+    width: 250px;
+    border-radius: 25px;
+    margin: 70px;
+   
+
+}
+
+.color{
+    color: aqua;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+
+    font-size: 18px;
+    padding: 20px;
+    color: #FFFFFF;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: #687cEF;
+}
+
+#menu  { 
+    display: none; 
+}
+
+
+
+
+
+
+
+
+.form_color {
+    max-width: 60em;
+    padding: 22px;
+    margin: -500px auto;
+    
+    border-radius: 0.5em;
+    box-shadow: inset 1px 1px 15px 3px;
+    color: #687cEF;
+}
+
+.btn {
+    margin: 3px 2px;
+}
+
+
+
+
+
+
+@media(max-width: 991px) {
+
+    .form_color {
+        max-width: 60em;
+        padding: 22px;
+        margin: 220px auto;
+        
+        border-radius: 0.5em;
+        box-shadow: inset 1px 1px 15px 3px;
+        color: #687cEF;
+    }
+    
+    .btn {
+        margin: 3px 2px;
+    }
+    
+
+
+
+.menu .logo-pag {
+        display: none;
+    }
+
+
+
+    .menu {
+        padding: 20px;
+        
+        
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #687cEF;
+        display: none;
+
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #151521;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+        
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+    .menu-icono {
+        display: initial;
+    }
+    
+    .header {
+        min-height: 0vh;
+        padding:  80px 30px 50px 30px;
+    }
+
+
+    .header-txt {
+        padding: 0;
+    }
+
+    .header-txt h1 {
+        font-size: 45px;
+    }
+}
