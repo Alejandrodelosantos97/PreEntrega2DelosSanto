@@ -3,101 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="formulario.css">
-    <title>Contacto</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website with a contact Form 01</title>
+    <link rel="stylesheet" href="contacto.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="style4.css">
 </head>
 <body>
-    <header class="header">
-        <div class="menu container">
-
-            <a href="index.html" class="logo"><img class="logo-pag" src="images/logo-pag.jpg" alt="truck logo"></a>
-            <input type="checkbox" id="menu" />
-            <label for="menu">
-                <img class="menu-icono" src="images/menu.png" alt="menu">
-            </label>
-             <nav class="navbar">
-             
-                <ul>
-                    <li class="nav__li"><a href="index.html ">HOME</a></li>
-                    <li class="nav__li"><a href="servicios.html">SERVICIOS</a></li>
-                    <li class="nav__li"><a href="cotizacion de servicios.html">COTIZACIÓN DE TRANSPORTE</a></li>
-                    <li class="nav__li"><a href="contacto.html">CONTACTO</a></li>
-                </ul>
-             </nav>
-        </div>
-    </header>
-
-
-
-
-
-
-
-
-
-
-
-    <section class="container">
-     <div class="row my-5">
-     <div class="col-sm-12 col-md-12 col-lg-12">
-                <form action="" method="post" class="form_color">
-                    <h2 class="display-5 text-primary text-center">¡Contáctenos! <br>
-                        Esperamos oír de usted</h2>
-                    <div class="form-group">
-                    <label for="">Nombre:</label>
-                    <input type="text" placeholder="Escriba su Nombre" maxlength="20" id="nombre" name="nombre" class="form-control">
-                     </div>  
-                    
-                     <div class="form-group">
-                    <label for="">Email:</label>
-                    <input type="email" placeholder="Escriba su Email" maxlength="20" id="Email" name="Email" class="form-control">
-                    </div>
-                    
-                    <div class="form-group">
-                    <label for="">Asunto:</label>
-                    <input type="text" placeholder="Escriba el Asunto" maxlength="20" id="Asunto" name="Asunto" class="form-control">
-                    </div>
-                    
-                    <div class="form-group">
-                    <label for="">Message:</label>
-                     <textarea placeholder="Escriba su Message" class="form-control"></textarea>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="">Selecciona Uno:</label>
-                     <select name="cargo" id="cargo" class="form-control">
-                        <option value="Enviar vehículo menor 4k lb">Trasladar vehículo menor a 4000 lb</option>
-                        <option value="Enviar vehículo mayor a 4k lb">Trasladar vehículo mayor a 4000 lb</option>
-                        <option value="Enviar vehículo de carga">Trasladar vehículo de carga</option>
-                     </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Agregue una foto de su vehiculo:</label>
-                        <input type="file" class="form-control">
-                    </div>
-                     
     
-                <div class="form-group btn">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                    <button type="submit" class="btn btn-primary">Guardar</button>
-                    <button type="submit" class="btn btn-primary">Ver Lista</button>
-                    <a href="" class="btn btn-danger">Borrar</a>
-                </div>
+    
+    
+    <div class="content">
 
+        <h2 class="logo">Contact <span>Us</span></h2>
 
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+                <h3>Contact us</h3>
+                <form action="">
+                    <p>
+                        <label>FullName</label>
+                        <input type="text" name="fullname">
+                    </p>
+                    <p>
+                        <label>Email Adress</label>
+                        <input type="email" name="email">
+                    </p>
+                    <p>
+                        <label>Numero de telefono</label>
+                        <input type="tel" name="phone">
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="affair">
+                    </p>
+                    <p class="block">
+                       <label>Message</label> 
+                        <textarea name="message" rows="3"></textarea>
+                    </p>
+                    <p class="block">
+                        <button>
+                            Enviar
+                        </button>
+                    </p>
                 </form>
             </div>
-
+            <div class="contact-info">
+                <h4>More Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>1250 Broadway</li>
+                    <li><i class="fas fa-phone"></i> (551) 312 1326</li>
+                    <li><i class="fas fa-envelope-open-text"></i> Logistic_Transport@gmail.com</li>
+                </ul>
+                <p>&copy;Todo los derechos reservados</p> <br>
+                <p>ALEJANDRO DE LOS SANTOS<br>USA - NEW YORK</p>
+            </div>
         </div>
-   
-     
 
-            </section>
+    </div>
 
-        
-
-        <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

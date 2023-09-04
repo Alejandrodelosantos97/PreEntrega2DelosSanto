@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Open+Sans&family=Poppins:wght@400;500;600;700;800&display=swap');
+    
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-color: #1E202D;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    
+    .header{
+        
+        display: flex;
+        align-items: center;
+        min-height: 40vh;
+        padding: 80px 0;
+    
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        color: #687cEF;
+        font-size: 25px;
+        font-weight: 800;
+        text-transform: uppercase;
+    
+    
+    }
+    
+    .logo-pag {
+        width: 250px;
+        border-radius: 25px;
+        margin: 70px;
+       
+    
+    }
+    
+    .color{
+        color: aqua;
+    }
+    
+    .menu .navbar ul li{
+        position: relative;
+        float: left;
+    }
+    
+    .menu .navbar ul li a{
+    
+        font-size: 18px;
+        padding: 20px;
+        color: #FFFFFF;
+        display: block;
+        font-weight: 600;
+    }
+    
+    .menu .navbar ul li a:hover{
+        color: #687cEF;
+    }
+    
+    #menu {
+        display: none;
+    }
+    
+    .menu-icono {
+        width: 25px;
+    }
+    
+    .menu label {
+        cursor: pointer;
+        display: none;
+    }
+    
+    .header-txt {
+        text-align: center;
+        padding:  0 150px;
+    
+    }
+    
+    .header-txt h1 {
+        font-size: 55px;
+        line-height: 1;
+        color: white;
+        margin-bottom: 25px;
+    }
+    
+    span {
+        color: #687cEF;
+    }
+    
+    P {
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    h2 {
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+    h3 {
+        color: #FFFFFF;
+        margin-top: 20px;
+    }
+
+    .section { 
+        background-color: #687cEF;
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        width: ;
+        margin: 15px auto;
+        border-radius: 20px;
+        
+    }
+
+    .section img {
+        width: 200px;
+        border-radius: 30px;
+        
+    }
+
+    .section h2 {
+        margin: 0;
+        color: #FFFFFF;
+    }
+    .section p {
+        margin-right: 15px;
+    }
+
+
+    
+    
+    @media(max-width: 991px) {
+
+        .menu .logo-pag {
+            display: none;
+        }
+    
+    
+    
+        .menu {
+            padding: 20px;
+            
+            
+        }
+    
+        .menu label {
+            display: initial;
+        }
+    
+        .menu .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #687cEF;
+            display: none;
+    
+        }
+    
+        .menu .navbar ul li a:hover {
+            color: #151521;
+        }
+    
+        .menu .navbar ul li {
+            width: 100%;
+        }
+    
+        #menu:checked ~ .navbar {
+            display: initial;
+        }
+        
+        .header {
+            min-height: 0vh;
+            padding:  80px 30px 50px 30px;
+        }
+    
+    
+        .header-txt {
+            padding: 0;
+        }
+    
+        .header-txt h1 {
+            font-size: 45px;
+        }
+        
+    }
